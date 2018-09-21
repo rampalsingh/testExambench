@@ -10,6 +10,7 @@ import com.msrtc.ExamBench.Util.Excel_Reader;
 import com.msrtc.ExamBench.Util.ExtentManager;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class BasePage {
 
@@ -36,10 +37,16 @@ public class BasePage {
 	}
 
 	public void initialization() {
-		
+		test.log(LogStatus.INFO, "Setting chromedriver path");
 		System.setProperty("webdriver.chrome.driver", path);
+		
+		test.log(LogStatus.INFO, "staring chrome browser");
 		driver = new ChromeDriver();
+		
+		test.log(LogStatus.INFO, "Setting Implicity wait");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		test.log(LogStatus.INFO, "Entering the URL");
 		driver.get(prop.getProperty("mainUrl"));
 	} 
 
