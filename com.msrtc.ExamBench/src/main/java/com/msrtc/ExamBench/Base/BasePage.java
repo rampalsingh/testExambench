@@ -1,20 +1,15 @@
 package com.msrtc.ExamBench.Base;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
-
 import com.msrtc.ExamBench.Util.Excel_Reader;
 import com.msrtc.ExamBench.Util.ExtentManager;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
-
 
 public class BasePage {
 

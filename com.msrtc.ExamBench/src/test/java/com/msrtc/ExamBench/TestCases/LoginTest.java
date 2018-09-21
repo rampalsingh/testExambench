@@ -36,7 +36,6 @@ public class LoginTest extends BasePage {
 	public void validLogin() throws Exception {
 		test.log(LogStatus.INFO, "Navigating to doLogin() method");
 		loginPage.doLogin();
-		
 		// Assert.assertEquals("Exambench", driver.getTitle());
 	}
 

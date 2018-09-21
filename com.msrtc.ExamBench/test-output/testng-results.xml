@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26101" started-at="2018-09-20T20:00:10Z" finished-at="2018-09-20T20:00:36Z">
+  <suite name="Default suite" duration-ms="34425" started-at="2018-09-21T07:26:41Z" finished-at="2018-09-21T07:27:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26101" started-at="2018-09-20T20:00:10Z" finished-at="2018-09-20T20:00:36Z">
+    <test name="Default test" duration-ms="34425" started-at="2018-09-21T07:26:41Z" finished-at="2018-09-21T07:27:15Z">
       <class name="com.msrtc.ExamBench.TestCases.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.msrtc.ExamBench.TestCases.LoginTest@71e9ddb4]" name="setUp" is-config="true" duration-ms="12477" started-at="2018-09-20T20:00:10Z" finished-at="2018-09-20T20:00:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.msrtc.ExamBench.TestCases.LoginTest@1e9ddb4]" name="setUp" is-config="true" duration-ms="30718" started-at="2018-09-21T07:26:41Z" finished-at="2018-09-21T07:27:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:com.msrtc.ExamBench.TestCases.LoginTest@71e9ddb4]" name="validLogin" duration-ms="12265" started-at="2018-09-20T20:00:23Z" finished-at="2018-09-20T20:00:35Z">
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:com.msrtc.ExamBench.TestCases.LoginTest@1e9ddb4]" name="validLogin" duration-ms="2323" started-at="2018-09-21T07:27:11Z" finished-at="2018-09-21T07:27:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.msrtc.ExamBench.TestCases.LoginTest@71e9ddb4]" name="tearDown" is-config="true" duration-ms="1334" started-at="2018-09-20T20:00:35Z" finished-at="2018-09-20T20:00:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.msrtc.ExamBench.TestCases.LoginTest@1e9ddb4]" name="tearDown" is-config="true" duration-ms="1325" started-at="2018-09-21T07:27:14Z" finished-at="2018-09-21T07:27:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
