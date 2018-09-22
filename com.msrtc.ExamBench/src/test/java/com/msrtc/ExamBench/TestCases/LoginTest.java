@@ -18,16 +18,15 @@ public class LoginTest extends BasePage {
 
 	public LoginTest() throws Exception {
 		super();
-
 	}
 
 	@BeforeMethod
 	public void setUp() throws Exception {
 		test = extent.startTest("Starting LoginTest testcase");
-		
+
 		test.log(LogStatus.INFO, "Executing Initialization method");
 		initialization();
-		
+
 		test.log(LogStatus.INFO, "creating loginPage Object");
 		loginPage = new LoginPage();
 	}
@@ -36,7 +35,6 @@ public class LoginTest extends BasePage {
 	public void validLogin() throws Exception {
 		test.log(LogStatus.INFO, "Navigating to doLogin() method");
 		loginPage.doLogin();
-		
 		// Assert.assertEquals("Exambench", driver.getTitle());
 	}
 
@@ -48,5 +46,4 @@ public class LoginTest extends BasePage {
 		}
 		driver.quit();
 	}
-
 }

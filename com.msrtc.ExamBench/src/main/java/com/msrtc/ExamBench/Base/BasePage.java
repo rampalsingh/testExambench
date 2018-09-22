@@ -1,20 +1,16 @@
 package com.msrtc.ExamBench.Base;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
-
 import com.msrtc.ExamBench.Util.Excel_Reader;
 import com.msrtc.ExamBench.Util.ExtentManager;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
-
+import com.relevantcodes.extentreports.LogStatus;
 
 public class BasePage {
 
@@ -41,10 +37,16 @@ public class BasePage {
 	}
 
 	public void initialization() {
-		
+		test.log(LogStatus.INFO, "Setting chromedriver path");
 		System.setProperty("webdriver.chrome.driver", path);
+		
+		test.log(LogStatus.INFO, "staring chrome browser");
 		driver = new ChromeDriver();
+		
+		test.log(LogStatus.INFO, "Setting Implicity wait");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		test.log(LogStatus.INFO, "Entering the URL");
 		driver.get(prop.getProperty("mainUrl"));
 	} 
 
