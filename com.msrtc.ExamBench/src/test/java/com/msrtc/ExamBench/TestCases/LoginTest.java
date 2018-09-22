@@ -20,6 +20,8 @@ public class LoginTest extends BasePage {
 		super();
 	}
 
+	
+	
 	@BeforeMethod
 	public void setUp() throws Exception {
 		test = extent.startTest("Starting LoginTest testcase");
