@@ -12,10 +12,7 @@ import com.msrtc.ExamBench.Pages.CategoryPage;
 import com.msrtc.ExamBench.Pages.HomePage;
 import com.msrtc.ExamBench.Pages.LoginPage;
 import com.msrtc.ExamBench.Util.Utils;
-import com.msrtc.ExamBench.Util.Xls_Reader;
 import com.relevantcodes.extentreports.LogStatus;
-
-import bsh.util.Util;
 
 public class CategoryTest extends BasePage {
 	HomePage homePage;

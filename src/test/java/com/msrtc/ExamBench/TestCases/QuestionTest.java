@@ -13,6 +13,7 @@ import com.msrtc.ExamBench.Pages.HomePage;
 import com.msrtc.ExamBench.Pages.LoginPage;
 import com.msrtc.ExamBench.Pages.QuestionPage;
 import com.msrtc.ExamBench.Util.Utils;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class QuestionTest extends BasePage {
 	HomePage homePage;
@@ -30,6 +31,8 @@ public class QuestionTest extends BasePage {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
+		test = extent.startTest("Starting QuestionTest testcase");
+		test.log(LogStatus.INFO, "Executing Initialization method");
 		initialization();
 		loginPage = new LoginPage();
 		homePage = loginPage.doLogin();
