@@ -46,8 +46,9 @@ public class BasePage {
 		test.log(LogStatus.INFO, "Setting Implicity wait");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
+		driver.manage().window().maximize();
+		
 		test.log(LogStatus.INFO, "Entering the URL");
 		driver.get(prop.getProperty("mainUrl"));
 	} 
-
 }

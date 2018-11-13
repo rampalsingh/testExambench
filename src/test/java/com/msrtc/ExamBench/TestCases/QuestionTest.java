@@ -38,10 +38,9 @@ public class QuestionTest extends BasePage {
 		addNQpg = questionPage.btnAddQuestion();
 	}
 
-	public void AddQuestion() throws Exception {
+	public void addQuestionData() throws Exception {
 		addNQpg.addNewQuestionDetails(questionText, choice1, choice1Marks, choice2, choice2Marks, choice3, choice3Marks,
 				choice4, choice4Marks);
-
 	}
 
 	@Test(dataProvider = "getData", priority = 1)
@@ -55,7 +54,7 @@ public class QuestionTest extends BasePage {
 		this.choice3Marks = data.get("Choice_3_Mark");
 		this.choice4 = data.get("Choice_4");
 		this.choice4Marks = data.get("Choice_4_Mark");
-		AddQuestion();
+		addQuestionData();
 	}
 
 	@DataProvider

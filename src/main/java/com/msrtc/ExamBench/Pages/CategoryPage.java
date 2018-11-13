@@ -25,11 +25,11 @@ public class CategoryPage extends BasePage {
 	WebElement btnSave;
 	
 	
-	public void btnAddCategory() throws Exception{
+	public void btnAddCategory(String Category, String Sub_Category) throws Exception{
 		btnAdd.click();
-		mainTextBoxCategory.sendKeys("Subject");
-		subTextBoxCategory.sendKeys("GK");
-		Thread.sleep(2000);
+		mainTextBoxCategory.sendKeys(Category);
+		subTextBoxCategory.sendKeys(Sub_Category);
+		Thread.sleep(500);
 		btnSave.click();
 		
 	}

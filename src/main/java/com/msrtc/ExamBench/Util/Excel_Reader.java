@@ -20,7 +20,7 @@ public class Excel_Reader {
 	public Excel_Reader(String excelPath, String sheetName) {
 		try {
 			workbook = new XSSFWorkbook(excelPath);
-			sheet = workbook.getSheetAt(1);
+			sheet = workbook.getSheet(sheetName);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
